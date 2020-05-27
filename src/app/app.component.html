@@ -1,0 +1,16 @@
+<hello [name]="name"></hello>
+<div class="wrapper">
+  <div class="card-wrapper" 
+        *ngFor="let card of cards; let i = index"
+  >
+     <div [style]="{
+       paddingTop:  (i * padding) + 'px',
+       paddingBottom: (cards.length - i - 1) * padding + 'px'
+      }">
+      <div class="card">{{card}}</div>
+    </div>
+  </div>
+</div>
+<p style="margin-bottom: 100vh">
+  Hello world
+</p>
