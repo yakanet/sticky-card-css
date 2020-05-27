@@ -1,6 +1,7 @@
 .wrapper {
   position: relative;
 }
+
 .card-wrapper {
   position: sticky;
   top: 20px;
